@@ -2,7 +2,7 @@
 
 ### Prerequisites
 Make sure you've installed the following:
-+ Node (Anything above v10 should do. Ensure npm is installed to)
++ Node (Anything above v10 should do. Ensure npm is installed too)
 + Docker (including docker-engine and docker-compose)
 
 ### Instructions for use:
