@@ -17,6 +17,19 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
 
+  backend:
+    image: "node:8"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./backend:/home/node/app
+    expose:
+      - '3000'
+    command: "npm install"
+    command: "node app.js"
+
   frontend:
     image: httpd:2.4
     volumes: 
